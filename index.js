@@ -55,4 +55,4 @@ do {
 } while (listaDeseos.length != cantidad)
 const nuevaLista = listaDeseos.concat ([" y mucho más proximamente"]);
 
-document.write (`<br><br>Tendremos en cuenta tu lista de deseos que incluye: ${nuevaLista}`);
+document.write (`<br><br>Tendremos en cuenta tu lista de deseos que incluye: ${nuevaLista.join (", ")}`);
