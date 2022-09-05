@@ -44,28 +44,15 @@ else {
 let resultado = mensualidades (producto, credito)
 document.write (`<br>Escogiste pagar ${resultado} durante ${credito} meses para adquirir este producto`);
 
+//Incorporando arrays
 
+const listaDeseos = [];
+let cantidad = 4;
+do {
+    let entrada = prompt("Ingresa 4 productos que desearías encontrar en nuestra tienda:");
+    listaDeseos.push(entrada);
+    console.log(listaDeseos.length);
+} while (listaDeseos.length != cantidad)
+const nuevaLista = listaDeseos.concat ([" y mucho más proximamente"]);
 
-
-/* document.write (`Debes de pagar ${resultado} durante ${credito} meses`); */
-
-
-
-/* Computadora Gamer
-
-$17,500
-
-Producto2
-Televisor LG
-
-$18,750
-
-Producto3
-Lavadora
-
-$11,300
-
-Producto4
-Estufa
-
-$8,500 */
+document.write (`<br><br>Tendremos en cuenta tu lista de deseos que incluye: ${nuevaLista}`);
